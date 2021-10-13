@@ -121,7 +121,7 @@ Numbers.prototype = {
 
 	mergeArray: function(array, rowOrColIndex, isRow, ltr) {
 		console.log("merge array: ", array.join(), " index: ", rowOrColIndex);
-		ltr = ltr == null ? true : ltr;
+		ltr = ltr === null ? true : ltr;
 		var len = array.length,
 			curr = ltr ? 0 : len - 1,
 			next = ltr ? curr + 1 : curr - 1;
